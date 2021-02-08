@@ -1,6 +1,6 @@
 {% set name = "NeuroKit2" %}
 {% set pypi_name = "neurokit2" %}
-{% set version = "0.0.42" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
-  sha256: b2881a7fb8a3c4a2e92360f4068b865b80957a0ed2f53454e91523a6a3127f59
+  sha256: 07834f58f76f0e52ef048d4877e10b44029d5fce6b0d2e2c0a78b14e2878d85d
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'The Python Toolbox for Neurophysiological Signal Processing'
+  summary: The Python Toolbox for Neurophysiological Signal Processing
   description: |
     This package is the continuation of NeuroKit 1. It's a user-friendly
     package providing easy access to advanced biosignal processing routines.
