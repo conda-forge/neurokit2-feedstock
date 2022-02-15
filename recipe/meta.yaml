@@ -1,6 +1,6 @@
 {% set name = "NeuroKit2" %}
 {% set pypi_name = "neurokit2" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
-  sha256: 4df48c0ce8971e32e32f36c2263986b00fd83da5eadaaa98e4bb5ab6bcd930e5
+  sha256: 47ff27109e6e4a67be13e2e3b8e8ad0db81bcb3bf709e706a35325c07ffdc60e
 
 build:
   noarch: python
