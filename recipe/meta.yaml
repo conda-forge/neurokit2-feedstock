@@ -1,6 +1,6 @@
 {% set name = "NeuroKit2" %}
 {% set pypi_name = "neurokit2" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
-  sha256: 852e56f52c483906e7d3a0c89fdeb5f6c57d1d0bbec0340aff6d2a2cfbaf2a28
+  sha256: f7c1fad4536a5491d136681fc44ea814cfc563409198002dd2389ea409b3ab67
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - scikit-learn
     - pandas
     - matplotlib-base
+    - requests
 
 test:
   imports:
