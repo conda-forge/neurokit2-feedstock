@@ -30,7 +30,7 @@ requirements:
     - pandas
     - matplotlib-base
     - requests
-    - pywt
+    - pywavelets
 
 test:
   requires:
