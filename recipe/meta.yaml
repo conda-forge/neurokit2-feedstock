@@ -30,6 +30,7 @@ requirements:
     - pandas
     - matplotlib-base
     - requests
+    - pywt
 
 test:
   requires:
