@@ -19,9 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
-    - pytest-runner
-    - numpy
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - numpy
