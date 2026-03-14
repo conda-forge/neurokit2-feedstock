@@ -29,6 +29,7 @@ requirements:
     - scikit-learn
     - pandas
     - matplotlib-base
+    - pywavelets
     - requests
 
 test:
@@ -55,3 +56,4 @@ extra:
   recipe-maintainers:
     - hoechenberger
     - JanCBrammer
+    - DerAndereJohannes
